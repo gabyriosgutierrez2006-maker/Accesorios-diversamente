@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Diversamente | Arte que llevas contigo</title><link rel="stylesheet" href="style.css"></head>
+<body><header><a href="#inicio" class="brand">Diversamente<span>Arte que llevas contigo</span></a><nav aria-label="Principal"><a href="#conocenos">Conócenos</a><a href="#catalogo">Colección</a><a href="#contacto">Personaliza</a><a href="#asistente">Asistente</a><a href="#admin">Admin</a></nav></header>
+<main><section id="inicio" class="hero"><p>HECHO CON ARTE · PENSADO PARA TI</p><h1>Tu estilo,<br>tu propia obra de arte.</h1><p>Bolsos pintados a mano para expresar lo que te hace diferente.</p><a class="button" href="#catalogo">Explora la colección</a><p class="note">Prototipo académico. Productos de ejemplo; precios, materiales y disponibilidad por confirmar.</p></section>
+<section id="conocenos">
+  <h2>Conoce Diversamente</h2>
+  <p>
+    Un proyecto que une creatividad, arte e inclusión.
+    Conoce a su diseñadora y descubre cómo participar.
+  </p>
+
+  <div
+    id="products"
+    class="grid"
+    aria-live="polite"
+  ></div>
+</section>
+
+<!-- Catálogo inicial de bolsos -->
+<section id="catalogo">
+  <h2>Nuestros bolsos</h2>
+
+  <p>
+    Cada idea empieza con un color y una historia.
+    Descubre nuestros diseños pintados a mano.
+  </p>
+
+  <div class="grid">
+
+    <article class="card">
+      <img
+        src="imagenes/gaby.jpg"
+        alt="Diseño del bolso Jardín de colores"
+        class="foto-producto"
+        loading="lazy"
+      >
+
+      <h3>Jardín de colores</h3>
+
+      <p>
+        Un diseño floral lleno de personalidad:
+        una propuesta para llevar el arte contigo.
+      </p>
+
+      <p class="note">
+        Precio, materiales y disponibilidad por confirmar.
+      </p>
+
+      <a class="button" href="#contacto">
+        Consultar este diseño
+      </a>
+    </article>
+
+    <article class="card">
+      <img
+        src="imagenes/bolso_corazones.jpg"
+        alt="Diseño del bolso Corazones"
+        class="foto-producto"
+        loading="lazy"
+      >
+
+      <h3>Corazones</h3>
+
+      <p>
+        Una propuesta inspirada en los corazones,
+        para dar un toque especial a tu estilo.
+      </p>
+
+      <p class="note">
+        Precio, materiales y disponibilidad por confirmar.
+      </p>
+
+      <a class="button" href="#contacto">
+        Consultar este diseño
+      </a>
+    </article>
+
+  </div>
+
+  <p class="note">
+    Catálogo académico inicial. Las características de cada
+    pieza y las opciones de personalización deben confirmarse.
+  </p>
+</section>
+
+<section id="contacto"><h2>Imaginemos tu próximo bolso</h2><p>Cuéntanos los colores, el tema o la idea que tienes en mente.</p><form id="contact"><label>Nombre<input name="name" required maxlength="200" autocomplete="name"></label><label>Correo<input name="email" type="email" required maxlength="200" autocomplete="email"></label><label>Tu idea<textarea name="message" required maxlength="3000"></textarea></label><p class="note">Usa datos ficticios durante las pruebas. La solicitud se guarda para que la consulte la administradora; no se envía un correo automático.</p><button>Enviar solicitud</button><p class="status" role="status"></p></form></section>
+<section id="asistente"><h2>Tu cómplice creativo</h2><p>Consulta el catálogo o pide ideas para personalizar tu bolso. Requiere configurar el servicio de IA.</p><form id="chat"><label>Pregunta<input name="message" required maxlength="1000" placeholder="¿Qué diseño combina con colores tierra?"></label><button>Consultar</button><p class="status" role="status"></p></form></section>
+<section id="admin"><h2>Administración</h2><form id="login"><label>Contraseña<input name="password" type="password" required autocomplete="current-password"></label><button>Entrar</button><p class="status" role="status"></p></form><div id="panel" hidden><button id="logout">Cerrar sesión</button><h3>Crear o editar producto</h3><form id="productForm"><input name="id" type="hidden"><label>Nombre<input name="name" required maxlength="100"></label><label>Descripción<textarea name="description" required maxlength="2000"></textarea></label><button>Guardar</button><button type="button" id="cancelEdit">Nuevo producto</button><p class="status" role="status"></p></form><h3>Productos</h3><div id="manage"></div><h3>Solicitudes recibidas</h3><div id="messages" aria-live="polite"></div></div></section></main><footer>Diversamente · Arte que llevas contigo · Prototipo académico</footer><script src="config.js"></script><script src="app.js"></script></body></html>
